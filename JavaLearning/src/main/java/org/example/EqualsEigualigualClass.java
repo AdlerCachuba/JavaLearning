@@ -67,11 +67,12 @@ public class EqualsEigualigualClass {
 
         //Mas uma curiosidade do Java, é que se você criar uma String dessa maneira
         String stringBoom1 = "hello";
-        String stringBoom2 = "hello";
+        String stringBoom2 = new String("hello");
         if (stringBoom1.equals(stringBoom2)){
             System.out.println("Usando o equals dá certo, como deve ser.");
         }
-        if(stringBoom1==stringBoom2){
+        String strinBoom3= "hello";
+        if(stringBoom1==strinBoom3){
             System.out.println("Usando o == também funciona");
         }// O Java irá fazer com que a stringBoom1 armazene um lugar na memória
         //E fará com a stringBoom2 também aponte para esse mesmo lugar na memõria
@@ -84,7 +85,6 @@ public class EqualsEigualigualClass {
         //Com isso podemos concluir que, quando vamos utilizar diversas Strings repetidas
         //É melhor utilizar o método mais rápido de criar elas
         //Exemplo: String teste = "teste";
-
 
 
     }

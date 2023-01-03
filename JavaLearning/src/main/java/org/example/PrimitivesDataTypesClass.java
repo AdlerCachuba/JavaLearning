@@ -39,5 +39,16 @@ public class PrimitivesDataTypesClass {
         char myChar = 'W';
         //Aqui gera erro porque o Java entende que aspas duplas("") significa que vai vir uma String.
         //char myChar2 = "C";
+
+        //Outro caso importante, é a comparação com o null.
+        //Tipos primitivos não podem ser nulos, logo a linha abaixo não é possível executar:
+        //int numeroInt = null;
+
+        //Porem quando associamos a um Objeto, é possível, como por exemplo:
+        Integer numeroIntegerNull = null;
+        Cat gatoNull = null;
+
+
+        System.out.println(gatoNull == null);
     }
 }
