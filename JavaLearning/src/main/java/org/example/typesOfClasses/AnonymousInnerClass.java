@@ -17,10 +17,9 @@ public class AnonymousInnerClass {
         //Mas se eu quero criar apenas um único cachorro especial que faça algo diferente?
         //Nós usamos a AnonymousInnerClass
         Dog dogEspecial = new Dog(){
-            @Override
+            @Override //Funciona com ou sem o @Override, quando usado, a gente tá sobrescrevendo o do método pai.
             public void fazerBarulho() {
                 System.out.println("EU sou um cachorro especial e único, e eu posso falar.");
-                System.out.println("Dando OVERRIDE nos métodos da classe pai.");
             }
             public void soltarRaioLaser() {
                 System.out.println("Posso implementar novos métodos ");
