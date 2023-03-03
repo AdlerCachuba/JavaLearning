@@ -1,4 +1,4 @@
-package org.example.TryCatchFinally;
+package org.example.tryCatchFinally;
 
 public class DesafioTryCatchFinally {
     public static void main(String[] args) {
