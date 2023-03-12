@@ -1,6 +1,5 @@
 package org.example.typesOfClasses;
 
-import org.example.Cat;
 import org.example.typesOfClasses.Abstract.Dog;
 
 public class AnonymousInnerClass {
