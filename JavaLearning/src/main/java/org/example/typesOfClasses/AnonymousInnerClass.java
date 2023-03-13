@@ -4,8 +4,6 @@ import org.example.typesOfClasses.Abstract.Dog;
 
 public class AnonymousInnerClass {
     public static void main(String[] args) {
-
-
         //Uma AnonymousInnerClass é uma subclasse de uma classe, que existe apenas um objeto.
         //E dentro dessa subclasse a gente consegue implementar métodos ou coisas especiais apenas para esse objeto.
 
@@ -15,11 +13,12 @@ public class AnonymousInnerClass {
 
         //Mas se eu quero criar apenas um único cachorro especial que faça algo diferente?
         //Nós usamos a AnonymousInnerClass
-        Dog dogEspecial = new Dog(){
+        Dog dogEspecial = new Dog() {
             @Override //Funciona com ou sem o @Override, quando usado, a gente tá sobrescrevendo o do método pai.
             public void fazerBarulho() {
                 System.out.println("EU sou um cachorro especial e único, e eu posso falar.");
             }
+
             public void soltarRaioLaser() {
                 System.out.println("Posso implementar novos métodos ");
                 System.out.println("Mas como esses métodos não estão na classe pai, eu não posso utilizar.");

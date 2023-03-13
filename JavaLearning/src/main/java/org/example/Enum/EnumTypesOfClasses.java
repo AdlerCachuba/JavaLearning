@@ -1,4 +1,4 @@
-package org.example.typesOfClasses;
+package org.example.Enum;
 
 public enum EnumTypesOfClasses {
 
@@ -7,13 +7,12 @@ public enum EnumTypesOfClasses {
     ARCHER("Arqueiro com 3 de agilidade", 3),
     DRUID("Druida com 3 de inteligencia", 3);
 
-    //Final faz com que seja imuntável os valores definidos.
+    //Final faz com que seja imutável os valores definidos na variável.
     final String description;
-
     final int power;
 
-    EnumTypesOfClasses(String description, int power){
-        this.description=description;
+    EnumTypesOfClasses(String description, int power) {
+        this.description = description;
         this.power = power;
     }
 

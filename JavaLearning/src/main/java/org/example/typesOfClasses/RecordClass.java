@@ -9,7 +9,8 @@ public record RecordClass(String name, int idade) {
     //constructor
     //get atributos (name/idade)
 
-    //Uma record não pode ter outros atributos que não sejam definidos nos parametros da criação (name,idade)
+    //Uma record não pode ter outros atributos que não sejam definidos nos parametros da criação
+    //Nesse exemplo usamos: (String name, int idade)
     //private String nomeError;
 
     //Uma record não pode extender nenhuma classe
@@ -25,7 +26,7 @@ public record RecordClass(String name, int idade) {
     public static final String STRING_DEFAULT = "Teste";
 
     //E podemos ter métodos normal nela
-    public String nameUpperCase(){
+    public String nameUpperCase() {
         return name.toUpperCase();
     }
 

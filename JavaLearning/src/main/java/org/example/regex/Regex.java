@@ -1,4 +1,4 @@
-package org.example.misc;
+package org.example.regex;
 
 public class Regex {
     public static void main(String[] args) {
@@ -6,6 +6,5 @@ public class Regex {
         String testInsideMatch = "(.*)Wel(.*)";
         System.out.println(test.matches(testInsideMatch));
         //Regex faz com que o (.*) busque em qualquer lugar, seja no começo ou no final de qlqr palavra
-
     }
 }

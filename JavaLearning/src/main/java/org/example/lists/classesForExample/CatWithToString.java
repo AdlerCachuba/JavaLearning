@@ -1,14 +1,14 @@
-package org.example.equals;
+package org.example.lists.classesForExample;
 
 import java.util.Objects;
 
 //Classe utilzada como apoio para EqualsClass
-public class Cat {
+public class CatWithToString {
 
     String nome;
     Integer idade;
 
-    public Cat(String nome, Integer idade) {
+    public CatWithToString(String nome, Integer idade) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -32,8 +32,8 @@ public class Cat {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Cat)) return false;
-        Cat cat = (Cat) o;
+        if (!(o instanceof CatWithToString)) return false;
+        CatWithToString cat = (CatWithToString) o;
         return Objects.equals(nome, cat.nome) && Objects.equals(idade, cat.idade);
     }
 
@@ -42,5 +42,11 @@ public class Cat {
         return Objects.hash(nome, idade);
     }
 
-
+    @Override
+    public String toString() {
+        return "CatWithToString{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
 }
