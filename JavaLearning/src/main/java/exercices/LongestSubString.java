@@ -16,9 +16,9 @@ public class LongestSubString {
     public static Integer countSubString(String inputString) {
         char[] charArrayInput = inputString.toCharArray();
         ArrayList<String> wordsUsed = new ArrayList<>();
-        for (char letra : charArrayInput) {
-            if (!wordsUsed.contains(String.valueOf(letra))) {
-                wordsUsed.add(String.valueOf(letra));
+        for (char letter : charArrayInput) {
+            if (!wordsUsed.contains(String.valueOf(letter))) {
+                wordsUsed.add(String.valueOf(letter));
             }
         }
         return wordsUsed.size();
