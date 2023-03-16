@@ -1,0 +1,26 @@
+package exercices;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class LongestSubString {
+    //Given a string s, find the lengh of the longest substring without repeating characters.
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String inputString = scanner.nextLine();
+        System.out.println(countSubString(inputString));
+    }
+
+
+    public static Integer countSubString(String inputString) {
+        char[] charArrayInput = inputString.toCharArray();
+        ArrayList<String> wordsUsed = new ArrayList<>();
+        for (char letra : charArrayInput) {
+            if (!wordsUsed.contains(String.valueOf(letra))) {
+                wordsUsed.add(String.valueOf(letra));
+            }
+        }
+        return wordsUsed.size();
+    }
+}

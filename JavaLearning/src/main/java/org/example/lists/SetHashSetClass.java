@@ -22,7 +22,6 @@ public class SetHashSetClass {
         names.add("Juggernaut");
         names.add("Mortred");
 
-          /*
         System.out.println(names); //[Malfurion, Adler, Juggernaut, Mortred, Crystal, Axe]
         //Primeira principal diferença entre Lista e Hashset é essa:
         //Uma lista sempre mantém a ordem de elementos adicionados nela, e tem vários métodos para ordenar a lista.
@@ -52,14 +51,12 @@ public class SetHashSetClass {
 
         //Mostra cada elemento da lista, mas como o HashSet não possui um Index
         //Ele pode mostrar elementos em ordem diferente do que estão no HashSet:
-        for(String name : names){
+        for (String name : names) {
             System.out.println(name);
         }
         //Ou em tudo em uma linha
         names.forEach(System.out::println);
 
-
-         */
 
         //Vamos dizer que eu possuo uma Lista de números com valores duplicados dentro.
         //E meu objetivo é exibir essa lista, mas sem mostrar elementos duplicados.
@@ -84,16 +81,14 @@ public class SetHashSetClass {
 
         //Mas, se eu quiser realizar uma iteração com cada elemento do meu HashSet?
         //Você precisa criar um Iterador, do mesmo tipo do HashSet:
-        Iterator<String> namesIterator =  names.iterator();
-        while(namesIterator.hasNext()){
+        Iterator<String> namesIterator = names.iterator();
+        while (namesIterator.hasNext()) {
             System.out.println(namesIterator.next());
         }
 
 
-
         //Limpar um HashSet
         names.clear();
-
 
 
     }
