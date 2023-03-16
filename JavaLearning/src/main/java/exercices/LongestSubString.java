@@ -1,6 +1,5 @@
 package exercices;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,7 +10,6 @@ public class LongestSubString {
         String inputString = scanner.nextLine();
         System.out.println(countSubString(inputString));
     }
-
 
     public static Integer countSubString(String inputString) {
         char[] charArrayInput = inputString.toCharArray();
